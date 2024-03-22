@@ -10,7 +10,7 @@ module.exports = {
         "color-secondary": "#04E1FF",
         "color-gray": "#333",
         "color-white": "#fff",
-        "color-blob": "#a427df",
+        "color-blob": "#FF9C31",
       }
     },
     container: {
