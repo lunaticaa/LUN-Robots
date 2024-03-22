@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <title>LUN Robots</title>
+    <script src="indexjs.js" defer></script>
   </head>
   <body class="bg-color-primary text-color-white tracking-wider">
     <!-- header started -->
@@ -61,8 +62,60 @@
             </li>
           </ul>
         </div>
+        <!-- mobile screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div
+          id="menu"
+          class="hidden bg-color-primary-dark h-[-100vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hlink"
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#app"
+                class="hover:text-color-secondary ease-in duration-200"
+                >RobotApp</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#about"
+                class="hover:text-color-secondary ease-in duration-200"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <!-- button for sell -->
+              <button
+                class="bg-color-secondary px-9 py-3 rounded-md capitalize font-sans hover:opacity-80 ease-in duration-200"
+              >
+                Buy Now
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <!-- header ended -->
     </header>
+    <!-- header ended -->
   </body>
 </html>
