@@ -9,3 +9,52 @@
 .title{
   @apply text-3xl md:text-4xl font-bold leading-snug;
 }
+
+.blob1{
+  @apply w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+
+.blob2{
+  @apply w-80 h-80 bg-color-secondary absolute right-0 bottom-10 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+
+
+.goods-pic.active-pic{
+  border: 2px solid #ff850b;
+}
+
+.goods-text{
+  display: none;
+}
+
+
+.goods-text.active-text{
+  display: block;
+  animation: moveup 1s forwards;
+}
+
+.goods-pic{
+  transition: all 0.2s ease;
+}
+
+@keyframes moveup {
+  0% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+
+  30% {
+    margin-top: 30px;
+    opacity: 0.4;
+  }
+
+  60%{
+    margin-top: 15px;
+    opacity: 0.6;
+  }
+
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
