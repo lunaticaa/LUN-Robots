@@ -33,3 +33,17 @@ function showImg(){
   goodsPics[i].classList.add('active-pic');
   goodsTexts[i].classList.add('active-text');
 };
+
+//  sticky header
+const navbar = document.querySelector('header');
+window.onscroll = () => {
+  if(window.scrollY > 100) {
+    navbar.classList.add('bg-color-primary-dark');
+    navbar.classList.add('border-b');
+    navbar.classList.add('border-color-gray');
+  } else{
+    navbar.classList.remove('border-b');
+    navbar.classList.remove('border-color-gray');
+    navbar.classList.remove('bg-color-primary-dark');
+  }
+}
