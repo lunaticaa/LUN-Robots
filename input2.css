@@ -102,6 +102,7 @@ input#checked{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    color: #e3e3e3;
     margin-top: -20px;
 }
 .forgot-section span{
