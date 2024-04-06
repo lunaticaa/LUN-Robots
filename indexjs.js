@@ -3,10 +3,14 @@ const hamburger = document.querySelector("#hamburger");
 const menu = document.querySelector("#menu");
 const hlink = document.querySelectorAll("#hlink");
 const faSolid = document.querySelector(".fa-solid");
+const navbar = document.querySelector('header');
+
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("hidden");
   faSolid.classList.toggle("fa-xmark");
+  navbar.classList.toggle("headers");
+  hamburger.classList.toggle("h-full");
 });
 
 hlink.forEach(link => {
@@ -35,7 +39,6 @@ function showImg(){
 };
 
 //  sticky header
-const navbar = document.querySelector('header');
 window.onscroll = () => {
   if(window.scrollY > 100) {
     navbar.classList.add('bg-color-primary-dark');
@@ -47,3 +50,5 @@ window.onscroll = () => {
     navbar.classList.remove('bg-color-primary-dark');
   }
 }
+
+// register animation forms 
