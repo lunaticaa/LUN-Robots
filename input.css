@@ -18,6 +18,10 @@
   @apply w-80 h-80 bg-color-secondary absolute right-0 bottom-10 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
 }
 
+.headers{
+  @apply sticky top-0 z-50;
+}
+
 
 .goods-pic.active-pic{
   border: 2px solid #ff850b;
@@ -58,3 +62,4 @@
     opacity: 1;
   }
 }
+
